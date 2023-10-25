@@ -4,57 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="style.css" rel="stylesheet" type=""text/css" />
-    <link href="utils.css" rel="stylesheet" type="" text/css" />
-
+    <link href="style.css" rel="stylesheet" type="text/css" >
+    
 
 </head>  
-<body>
-    <h1 align="center" >HELLO CALCULATOR</h1>
-    <div class=" container" align = "center" bgcolor:"red">
-        <div class="row">
-            <input type="number" name="" id="">
-
-        </div>
-        <div class="row">
-            <button class="button">1</button>
-            <button class="button">2</button>
-            <button class="button">3</button>
-            
-            <button class="button">AC</button>
-            
-        </div>
-        <div class="row">
-            <button class="button">4</button>
-            <button class="button">5</button>
-            <button class="button">6</button>
-            
-            <button class="button">DE</button>
-            
-
-        </div>
-        <div class="row">
-            <button class="button">7</button>
-            <button class="button">8</button>
-            <button class="button">9</button>
-            
-            
-            <button class="button"> / </button>
-           
-
-        </div>
-        <div class="row">
-            <button class="button">0</button>
-            <button class="button"> + </button>
-            <button class="button"> - </button>
-            <button class="button"> X </button>
-
-        </div>
-
+<div class="container">
+    <div align:center><br>
+    <input type='text' id='result' class='screen' style="text-align: right;">
+    </div>    
+    <div align:right>
+    <input type="button" value="7" class="button" onClick="display('7')"></input>
+    <input type="button" value="8" class="button " onClick="display('8')"></input>
+    <input type="button" value="9" class="button" onClick="display('9')"></input>
+    <input type="button" value="/" class="operator" onClick="display('/')"></input>
+    </div >
+    <div align:center><input type="button" value="4" class="button" onClick="display('4')"></input>
+    <input type="button" value="5" class="button" onClick="display('5')"></input>
+    <input type="button" value="6" class="button" onClick="display('6')"></input>
+    <input type="button" value="*" class="operator" onClick="display('*')"></input>
     </div>
+    <div align:center>
+    <input type="button" value="1" class="button" onClick="display('1')"></input>
+    <input type="button" value="2" class="button" onClick="display('2')"></input>
+    <input type="button" value="3" class="button" onClick="display('3')"></input>
+    <input type="button" value="-" class="operator" onClick="display('-')"></input>
+    </div>    
+    <div align:center>
+    <input type="button" value="0" class="button" onClick="display('0')"></input>
+    <input type="button" value="." class="button" onClick="display('.')"></input>
+    <input type="button" value="=" class="button equal-sign" onClick="solve()"></input>
+    <input type="button" value="+" class="operator" onClick="display('+')"></input>
+    </div>    
+    <div>
+    <input type="button" value='C'   onclick="clearScreen()" class="clear" >
+    <button onclick="back()" class="back" ><img src=".\delete.png" height="30" width="30" ></button>
+    </div>
+      
+        
     
+</div>
+    <script src = "script.js">        
+    </script>
     
-    <script src = "script.js"></script>
-
 </body>
 </html>
